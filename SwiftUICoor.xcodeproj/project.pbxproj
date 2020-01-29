@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		FA175E0A23E096990042998C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E0923E096990042998C /* AppDelegate.swift */; };
 		FA175E0C23E096990042998C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E0B23E096990042998C /* SceneDelegate.swift */; };
-		FA175E0E23E096990042998C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E0D23E096990042998C /* ContentView.swift */; };
 		FA175E1023E096990042998C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA175E0F23E096990042998C /* Assets.xcassets */; };
 		FA175E1323E096990042998C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA175E1223E096990042998C /* Preview Assets.xcassets */; };
 		FA175E1623E096990042998C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA175E1423E096990042998C /* LaunchScreen.storyboard */; };
+		FA175E1E23E097290042998C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E1D23E097290042998C /* App.swift */; };
+		FA175E2023E098A70042998C /* ContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E1F23E098A70042998C /* ContainerProtocol.swift */; };
+		FA175E2323E0999D0042998C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E2223E0999D0042998C /* Coordinator.swift */; };
+		FA175E2523E09C9C0042998C /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E2423E09C9C0042998C /* SplashView.swift */; };
+		FA175E2723E09D5C0042998C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E2623E09D5C0042998C /* HomeView.swift */; };
+		FA175E2923E0A1970042998C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175E2823E0A1970042998C /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA175E0623E096990042998C /* SwiftUICoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA175E0923E096990042998C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA175E0B23E096990042998C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA175E0D23E096990042998C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA175E0F23E096990042998C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA175E1223E096990042998C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA175E1523E096990042998C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA175E1723E096990042998C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA175E1D23E097290042998C /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		FA175E1F23E098A70042998C /* ContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerProtocol.swift; sourceTree = "<group>"; };
+		FA175E2223E0999D0042998C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FA175E2423E09C9C0042998C /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		FA175E2623E09D5C0042998C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA175E2823E0A1970042998C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				FA175E0923E096990042998C /* AppDelegate.swift */,
 				FA175E0B23E096990042998C /* SceneDelegate.swift */,
-				FA175E0D23E096990042998C /* ContentView.swift */,
+				FA175E1D23E097290042998C /* App.swift */,
+				FA175E1F23E098A70042998C /* ContainerProtocol.swift */,
+				FA175E2223E0999D0042998C /* Coordinator.swift */,
+				FA175E2423E09C9C0042998C /* SplashView.swift */,
+				FA175E2623E09D5C0042998C /* HomeView.swift */,
+				FA175E2823E0A1970042998C /* DetailView.swift */,
 				FA175E0F23E096990042998C /* Assets.xcassets */,
 				FA175E1423E096990042998C /* LaunchScreen.storyboard */,
 				FA175E1723E096990042998C /* Info.plist */,
@@ -146,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA175E1E23E097290042998C /* App.swift in Sources */,
+				FA175E2923E0A1970042998C /* DetailView.swift in Sources */,
+				FA175E2723E09D5C0042998C /* HomeView.swift in Sources */,
 				FA175E0A23E096990042998C /* AppDelegate.swift in Sources */,
+				FA175E2323E0999D0042998C /* Coordinator.swift in Sources */,
 				FA175E0C23E096990042998C /* SceneDelegate.swift in Sources */,
-				FA175E0E23E096990042998C /* ContentView.swift in Sources */,
+				FA175E2023E098A70042998C /* ContainerProtocol.swift in Sources */,
+				FA175E2523E09C9C0042998C /* SplashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +308,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICoor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUICoor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICoor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUICoor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
